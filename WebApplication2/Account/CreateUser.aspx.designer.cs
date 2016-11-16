@@ -10,33 +10,42 @@
 namespace WebApplication2.Account {
     
     
-    public partial class Manage {
+    public partial class CreateUser {
         
         /// <summary>
-        /// Control successMessage.
+        /// Control ErrorMessage.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder successMessage;
+        protected global::System.Web.UI.WebControls.Literal ErrorMessage;
         
         /// <summary>
-        /// Control ChangePassword.
+        /// Control Email.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink ChangePassword;
+        protected global::System.Web.UI.WebControls.TextBox Email;
         
         /// <summary>
-        /// Control CreatePassword.
+        /// Control Password.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink CreatePassword;
+        protected global::System.Web.UI.WebControls.TextBox Password;
+        
+        /// <summary>
+        /// Control ConfirmPassword.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ConfirmPassword;
     }
 }

@@ -19,10 +19,10 @@
                 <dl class="dl-horizontal">
                     <dt>Contraseña:</dt>
                     <dd>
-                        <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Change]" Visible="false" ID="ChangePassword" runat="server" />
-                        <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Create]" Visible="false" ID="CreatePassword" runat="server" />
+                        <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Cambiar contraseña]" Visible="false" ID="ChangePassword" runat="server" />
+                        <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Crear contraseña]" Visible="false" ID="CreatePassword" runat="server" />
                     </dd>
-                    <dt>Inicios de sesión externos:</dt>
+                    <!--<dt>Inicios de sesión externos:</dt>
                     <dd><%: LoginsCount %>
                         <asp:HyperLink NavigateUrl="/Account/ManageLogins" Text="[Manage]" runat="server" />
 
@@ -71,7 +71,7 @@
                         <asp:LinkButton Text="[Enable]" CommandArgument="true" OnClick="TwoFactorEnable_Click" runat="server" />
                         --%>
                         <% } %>
-                    </dd>
+                    </dd>-->
                 </dl>
             </div>
         </div>

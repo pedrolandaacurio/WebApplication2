@@ -7,6 +7,8 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
+using WebApplication2.Models;
+using WebApplication2.Account;
 
 namespace WebApplication2
 {
@@ -15,6 +17,7 @@ namespace WebApplication2
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";
         private const string AntiXsrfUserNameKey = "__AntiXsrfUserName";
         private string _antiXsrfTokenValue;
+        private object adminLink;
 
         protected void Page_Init(object sender, EventArgs e)
         {
@@ -69,7 +72,10 @@ namespace WebApplication2
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (HttpContext.Current.User.IsInRole("Administrador"))
+            {
+                //adminLink.
+            }
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
