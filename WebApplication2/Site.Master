@@ -56,9 +56,9 @@
                                 <asp:RoleGroup Roles="Administrador">
                                     <ContentTemplate>
                                         <li runat="server" id="admin_usuario" class="dropdown">
-                                          <a class="dropdown-toggle" role="button" aria-expanded="true" href="#" data-toggle="dropdown">Usuario <span class="caret"></span></a>
+                                          <a class="dropdown-toggle" role="button" aria-expanded="true" href="#" data-toggle="dropdown">Control de Usuarios <span class="caret"></span></a>
                                           <ul class="dropdown-menu" role="menu">
-                                            <li><a runat="server" href="~/Account/CreateUser">Registrar nuevo usuario</a></li>
+                                            <li><a runat="server" href="~/Account/Register">Registrar nuevo usuario</a></li>
                                             <li><a runat="server" href="~/Account/ControlUsers">Control de usuarios</a></li>
                                           </ul>
                                         </li>

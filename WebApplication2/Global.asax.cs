@@ -29,26 +29,31 @@ namespace WebApplication2
 
             // IdentityResult ir;
 
-            var rm = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
-            if (!rm.RoleExists("Administrador"))
-            {
-                rm.Create(new IdentityRole("Administrador"));
-            }
+            //var rm = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+            //if (!rm.RoleExists("Administrador"))
+            //{
+            //rm.Create(new IdentityRole("Administrador"));
+            //}
 
-            if (!rm.RoleExists("Digitador"))
-            {
-                rm.Create(new IdentityRole("Digitador"));
-            }
+            //if (!rm.RoleExists("Digitador"))
+            //{
+            //    rm.Create(new IdentityRole("Digitador"));
+            //}
 
-            var um = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
-            if (um.FindByName("admin") == null)
-            {
-                var user = new ApplicationUser() { UserName = "admin" , Email = "admin@ejemplo.com" };
-                um.Create(user, "123456");
-                um.AddToRole(user.Id, "Administrador");
-            }
-            
-            
+            //if (!rm.RoleExists("Tecnico"))
+            //{
+            //    rm.Create(new IdentityRole("Tecnico"));
+            //}
+
+            //var um = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+            //if (um.FindByName("admin") == null)
+            //{
+            //var user = new ApplicationUser() { UserName = "admin" , Email = "admin@ejemplo.com" };
+            //um.Create(user, "123456");
+            //um.AddToRole(user.Id, "Administrador");
+            //}
+
+
 
             // Revisar si existe el usuario adminstrador, si no lo crea
             //if (Membership.GetUser("admin") == null)
@@ -56,6 +61,8 @@ namespace WebApplication2
             //Membership.CreateUser("admin", "123456Magdalena!", "admin@ejemplo.com");
             //Roles.AddUserToRole("admin", "Administrador");
             //}
+
+
         }
     }
 }
